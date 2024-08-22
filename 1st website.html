@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./hov.css">
+  <style>
+    .accordion {
+      background-color: #faf4ed;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: #faf4ed; 
+    }
+    
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: #faf4ed;
+      overflow: hidden;
+    }
+    .accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+    </style>
+</head>
+<body style="background-color: #faf4ed;">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href=""><img src="./images/The-Man-Company-1.jpg" width="100px" height="50px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white " style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small;" href="javascript:void(0)"><strong>Home</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" style="font-family: Arial, Helvetica, sans-serif;" href="javascript:void(0)">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="javascript:void(0)">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="javascript:void(0)">By Concerns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="javascript:void(0)">More</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <div class="input-group">
+                <span class="input-group-text"><img src="./images/search bar 2.png" height="15px" width="15px" alt=""></span>
+              <input class="form-control me-2" type="text" placeholder="Search">
+            </div>
+              
+            </form> 
+            <a href="" class="navbar-brand" ><img src="./images/profile.jpeg" width="40px" height="40px" alt=""></a>
+            <a href="" class="navbar-brand"><img src="./images/cart.jpg" width="40px" height="40px" alt=""></a>
+            <a href="" class="navbar-brand"><img src="./images/loca.jpg" width="40px" height="40px" alt=""></a>
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-5" style="background-image: url(./images/Collection_2Hair_desktop_1500x.webp); height: 350px;">
+        <!-- <img src="./images/Collection_2Hair_desktop_1500x.webp" class="border rounded-4" width="100%" alt=""> -->
+         <h2 style="padding-top: 100px;"> Hair That Slay & Sway</h2>
+         <p>Let your hair speak volumes with our asor</p>
+        <button class="btn btn-danger btn-lg" style="padding: 10px 50px 10px 50px;">Shop now </button>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2 class="">filter</h2>
+                <hr>
+                <button class="accordion"><strong>Catagories</strong></button>
+                <div class="panel">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                        <label class="form-check-label">Combo</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                        <label class="form-check-label">Hair</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                        <label class="form-check-label">Hair kit</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" >
+                        <label class="form-check-label">With free gift</label>
+                      </div>
+                </div>
+                
+                <button class="accordion"><strong>Price</strong></button>
+                <div class="panel">
+                  <input type="range"><br>
+                  <label for="" >0</label>
+                  <label for="" style="margin-left: 100px;">1000</label>
+                </div>
+                
+                <button class="accordion"><strong>Availability</strong></button>
+                <div class="panel">
+                    <div class="form-check form-switch">
+                        <label class="form-check-label" for="mySwitch">Out of Stock</label>
+                        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" >
+                    
+                      </div>
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+              <h6>24 Results Found</h6>
+              <div class="card shadow p-3 " style="height: 650px;margin-top: 46px;">
+                <img src="./images/grey hair.webp" class="mb-3 rounded "   alt="">
+                <span class="badge bg-dark" style="margin-right: 110px;"> GREY HAIR REMEDY KIT</span>
+                <h5 style="" class="mt-3"><Strong>Grey Hair Remedy Kit</Strong></h5>
+                <p class="mt-3">Our Grey Hair Remedy Kit is here to reverse the clock and bring back colour</p>
+                <h4>₹399 <del style="font-size: medium;">₹499</del> <strong style="font-size: medium;" class="text-danger"> 20% OFF </strong> <span style="margin-left: 20px;"><button type="button" class="btn btn-outline-danger"><strong>★4.8</strong></button></span></h4>
+                <button class="btn btn-danger btn-lg mt-3">ADD TO CART</button>
+
+                </div>
+
+              </div>
+              <div class="col-sm-3" style="margin-top: 30px;">
+                <div class="card shadow p-3 " style="height: 650px;margin-top: 35px;">
+                  <img src="./images/HairfallDefenceShampoo-PrimaryImages4_480x.webp" class="mb-3 rounded-circle "   alt="">
+                  <span class="badge bg-dark" style="margin-right: 110px;"> 2 Options Available</span>
+                  <h5 class="mt-3"><Strong>Hairfall Defence Shampoo (100ml)</Strong></h5>
+                  <p class="mt-3">The Man Company Hairfall Defence Shampoo is a powerhouse formula</p>
+                  <h4>₹1,147 <span style="margin-left: 110px;"><button type="button" class="btn btn-outline-danger"><strong>★4.6</strong></button></span></h4>
+                  <button class="btn btn-danger btn-lg mt-3">ADD TO CART</button>
+  
+                  </div>
+  
+                </div>
+                <div class="col-sm-3">
+                  <div class="dropdown">
+                    <button type="button" class="btn border dropdown-toggle" style="margin-left: 140px; margin-bottom: 20px;"  data-bs-toggle="dropdown">
+                     <strong> Sort by:</strong> Featured
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Best Selling</a></li>
+                      <li><a class="dropdown-item" href="#">Alphabetically, A-Z</a></li>
+                      <li><a class="dropdown-item" href="#">Alphabetically, Z-A</a></li>
+                      <li><a class="dropdown-item" href="#">Price, low to high</a></li>
+                      <li><a class="dropdown-item" href="#">Price, high to low</a></li>
+                      <li><a class="dropdown-item" href="#">Date, old to new</a></li>
+                      <li><a class="dropdown-item" href="#">Date, new to old</a></li>
+                    </ul>
+                  </div>
+                  <div class="card shadow p-3" style="height: 650px; margin-top: 8px;">
+                    <img src="./images/anti-greying-before-after_bc635cf2-dad5-481f-ab69-c40d3a973868_480x.webp" class="mb-3 rounded "   alt="">
+                    <span class="badge bg-dark" style="margin-right: 110px;">2 Options Available</span>
+                    <h5 style="" class="mt-3"><Strong>Anti-Graying Shampoo & Conditioner</Strong></h5>
+                    <p class="mt-3">Is dandruff flaking you out? The Man Company Dandruff Control 2-in-1</p>
+                    <h4>₹349 <del style="font-size: medium;">₹399</del> <strong style="font-size: medium;" class="text-danger"> 12% OFF </strong> <span style="margin-left: 20px;"><button type="button" class="btn btn-outline-danger"><strong>★4.8</strong></button></span></h4>
+                    <button class="btn btn-danger btn-lg mt-3">ADD TO CART</button>
+    
+                    </div>
+    
+                  </div>
+               
+            </div>
+            <div class="row">
+              <div class="col-sm-3">
+                
+
+              </div>
+              <div class="col-sm-3" style="margin-top: 10px;">
+                <div class="card shadow p-3" style="height: 650px;margin-top: 35px;">
+                  <img src="./images/dandruff control.webp" class="mb-3 rounded "   alt="">
+                  <span class="badge bg-dark" style="margin-right: 110px;"> 2 Options Available</span>
+                  <h5 style="" class="mt-3"><Strong>Dandruff Control 2-in-1 Shampoo & Conditioner |</Strong></h5>
+                  <p class="mt-3">Is dandruff flaking you out? The Man Company Dandruff Control 2-in-1</p>
+                  <h4>₹249 <span style="margin-left: 110px;"><button type="button" class="btn btn-outline-danger"><strong>★4.6</strong></button></span></h4>
+                  <button class="btn btn-danger btn-lg mt-3">ADD TO CART</button>
+  
+                  </div>
+  
+                </div>
+                <div class="col-sm-3" style="margin-top: 10px;">
+                  <div class="card shadow p-3" style="height: 650px;margin-top: 35px;">
+                    <img src="./images/4_817eb0f8-ec3e-4bd8-9943-e3cdf3eaad16_480x.webp" class="mb-3 rounded "   alt="">
+                    <span class="badge bg-dark" style="margin-right: 110px;"> 2 Options Available</span>
+                    <h5 style="" class="mt-3"><Strong>Hairfall Control 2-in-1 Shampoo & Conditioner |</Strong></h5>
+                    <p class="mt-3" style="font-size:smaller;">Rely on ten natural ingredients to tackle hair fall! Witness an extraordinar......</p>
+                    <h4>₹249 <span style="margin-left: 110px;"><button type="button" class="btn btn-outline-danger"><strong>★4.9</strong></button></span></h4>
+                    <button class="btn btn-danger btn-lg mt-4">ADD TO CART</button>
+    
+                    </div>
+    
+                  </div>
+                  <div class="col-sm-3" style="margin-top: 10px;">
+                    <div class="card shadow p-3" style="height: 650px;margin-top: 35px;">
+                      <img src="./images/powder.webp" class="mb-3 rounded "   alt="">
+                      <span class="badge bg-dark" style="margin-right: 110px;"> 2 Options Available</span>
+                      <h5 style="" class="mt-3"><Strong>Hair Volumizing Powder Wax | Argan Oil & Rice</Strong></h5>
+                      <p class="mt-3" style="font-size:smaller;">For hair that speaks volumes about your personality! Our easy-to-use Hair Vol...</p>
+                      <h4>₹299 <span style="margin-left: 110px;"><button type="button" class="btn btn-outline-danger"><strong>★4.9</strong></button></span></h4>
+                      <button class="btn btn-danger btn-lg mt-4">ADD TO CART</button>
+      
+                      </div>
+      
+                    </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-sm-3">
+
+                  </div>
+                  <div class="col-sm-3" style="margin-top: 10px;">
+                    <div class="card shadow p-3" style="height: 650px;margin-top: 35px;">
+                      <img src="./images/machismo.webp" class="mb-3 rounded "   alt="">
+                      <span class="badge bg-dark" style="margin-right: 200px;">HAIR WAX</span>
+                      <h5 style="" class="mt-3"><Strong>Machismo Cream Wax | Almond Oil & Vitamin E</Strong></h5>
+                      <p class="mt-3 text-muted">Experience the best hair wax for men for that 24 hr hold & matte finish. This...</p>
+                      <h4>₹349 <span style="margin-left: 110px;"><button type="button" class="btn btn-outline-danger"><strong>★4.5</strong></button></span></h4>
+                      <button class="btn btn-danger btn-lg mt-3">ADD TO CART</button>
+      
+                      </div>
+      
+                    </div>
+                    <div class="col-sm-3" style="margin-top: 10px;">
+                      <div class="card shadow p-3" style="height: 650px;margin-top: 35px;">
+                        <img src="./images/brawn.webp" class="mb-3 rounded "   alt="">
+                        <span class="badge bg-dark" style="margin-right: 200px;">HAIR WAX</span>
+                        <h5 style="" class="mt-3"><Strong>Brawn Hair Wax | Almond & Argan Oil</Strong></h5>
+                        <p class="mt-3 text-muted">The Man Company Hair Wax for Men contains Argan Oil & Almond and is the</p>
+                        <h4>₹249 <span style="margin-left: 110px;"><button type="button" class="btn btn-outline-danger"><strong>★4.9</strong></button></span></h4>
+                        <button class="btn btn-danger btn-lg mt-3">ADD TO CART</button>
+        
+                        </div>
+        
+                      </div>
+                      <div class="col-sm-3" style="margin-top: 10px;">
+                        <div class="card shadow p-3" style="height: 650px;margin-top: 35px;">
+                          <img src="./images/SUPOR.webp" class="mb-3 rounded "   alt="">
+                          <span class="badge bg-dark" style="margin-right: 200px;">POMADE</span>
+                          <h5 style="" class="mt-3"><Strong>Sportivo Pomade | Aloe Vera & Vitamin E</Strong></h5>
+                          <p class="mt-3 text-muted">Enjoy the ultra-glam look with Sportivo Hair Pomade from the collection of Ha...</p>
+                          <h4>₹349 <span style="margin-left: 110px;"><button type="button" class="btn btn-outline-danger"><strong>★4.3</strong></button></span></h4>
+                          <button class="btn btn-danger btn-lg mt-3">ADD TO CART</button>
+          
+                          </div>
+          
+                        </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        
+
+      </div>
+      <footer class="text-muted py-5 mt-5 bg-dark">
+        <div class="container">
+          <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+          </p>
+          <p class="mb-1 text-white">Album example is © Bootstrap, but please download and customize it for yourself!</p>
+          <p class="mb-0 text-white">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+      </footer>
+      
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
